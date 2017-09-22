@@ -17,6 +17,14 @@ library
   hs-source-dirs:      src
   exposed-modules:     Lib
   build-depends:       base >= 4.7 && < 5
+                     , aeson
+                     , async
+                     , basic-prelude
+                     , conduit
+                     , eventstore
+                     , exceptions
+                     , lens
+                     , mtl
   default-language:    Haskell2010
 
 executable eventstore-conduit-exe
