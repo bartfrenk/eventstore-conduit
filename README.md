@@ -1,6 +1,8 @@
 # Database.EventStore.Conduit
 
-Should allow one to do a monoidal fold over subsequent events in an event stream, by writing:
+Work-in-progress. Should allow one to do a monoidal fold over subsequent events
+in an event stream, by writing:
+
 ```haskell
 mappendStream :: (FromJSON a, Monoid a, EventStoreMonad m)
               => StreamName -> Int32 -> Int32 -> m a
